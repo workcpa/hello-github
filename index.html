@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>我的第一个 GitHub 项目</title>
+    <style>
+        body {
+            font-family: -apple-system, "PingFang SC", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+        }
+        h1 { font-size: 3em; margin-bottom: 0.5em; }
+        p { font-size: 1.2em; opacity: 0.9; }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>🎉 Hello GitHub!</h1>
+        <p>这是我人生中第一个上传到 GitHub 的项目</p>
+        <p id="date"></p>
+    </div>
+    <script>
+        document.getElementById("date").textContent =
+            "上传时间：" + new Date().toLocaleString("zh-CN");
+    </script>
+</body>
+</html>
